@@ -1,0 +1,10 @@
+:root {
+    --gold:  #F1C40F;
+    --white:  #ffffff;
+    --navfooterbg: #F5F5DC;
+    --text: black;
+}
+
+h1{
+    color: var(--gold);
+}
