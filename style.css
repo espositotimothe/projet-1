@@ -5,6 +5,79 @@
     --text: black;
 }
 
-h1{
-    color: var(--gold);
+header nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 2%;
+    border: none;
+    gap: 35px;
+    margin-top: auto;
+    
+}
+
+header nav li a {
+    text-decoration: none;
+    color: var(--text);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 50px;
+    
+}
+
+button {
+    padding: 10px 20px; /* Adjust padding for a luxurious feel */
+    font-size: 50px; /* Larger font size */
+    cursor: pointer;
+    background: linear-gradient(145deg, #b29f3c, #d4af37); /* Modern gold gradient background */
+    color: black; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 30px; /* More pronounced rounded corners */
+    transition: background 0.8s, transform 0.2s; /* Smooth transition for background and scale */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Softer, larger shadow for depth */
+    font-family: "Cormorant Garmond", serif; /* Luxurious font style */
+    letter-spacing: 1px; /* Slight letter spacing for a more upscale feel */
+    padding-top: 10px;
+    
+    
+}
+
+button:hover {
+    background: linear-gradient(145deg, #d4af37, #b29f3c); /* Change gradient on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5); /* More pronounced shadow on hover *//
+
+}
+
+button:active {
+    transform: translateY(1px); /* Slightly sink on click for feedback */
+
+}
+
+button a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 50px;
+    
+}
+
+header {
+    background-image: url(images/headeur.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    padding-top: 0;
+        
 }
