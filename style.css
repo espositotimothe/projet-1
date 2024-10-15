@@ -121,8 +121,82 @@ header {
     width: 600px; 
     height: auto; 
     padding: 5px;
-    background-color:transparent; 
+    background-color: transparent;
     display: block;
     margin: 0 auto; 
     padding-top: 80px;
+}
+
+
+.ethique {
+    max-width: 80%;
+    flex: 1;
+    margin-bottom: auto;
+    position: relative;
+    background: white;
+    display: flex;
+    margin-top: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#text-container {
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+
+.ethique h2 {
+    padding: 100px;
+    color: #000;
+    font-family: "Aguafina Script";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+
+}
+
+.ethique p {
+    color: #000;
+    font-family: Roboto;
+    padding: 50px;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 90%;
+    height: 100%;
+    word-wrap: break-word;
+
+}
+
+.carousel-container {
+    position: relative;
+    width: 60%; 
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease; 
+    width: 300%; 
+}
+
+
+.carousel-img {
+    width: auto;
+    height: auto; 
+    flex-shrink: 0; 
+}
+
+
+.carousel-container img {
+    object-fit: cover;
+    height: auto; 
 }

@@ -47,3 +47,23 @@ var navbar = document.getElementById("navbar");
         
         
         window.addEventListener('resize', handleResize);
+
+       let currentIndex = 0;
+const images = document.querySelectorAll('.carousel-img');
+const totalImages = images.length;
+const carousel = document.querySelector('.carousel');
+
+
+function updateCarousel() {
+    const translateXValue = -currentIndex * 100; 
+    carousel.style.transform = `translateX(${translateXValue}%)`;
+}
+
+
+function nextImage() {
+    currentIndex = (currentIndex + 1) % totalImages; 
+    updateCarousel();
+}
+
+
+setInterval(nextImage, 3000);
