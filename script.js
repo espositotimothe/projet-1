@@ -19,6 +19,21 @@ var navbar = document.getElementById("navbar");
                 navbar.classList.remove("scrolled");
             }
         };
+<<<<<<< HEAD
+let index = 0;
+
+    function showNextImage() {
+const carousel = document.querySelector('.carousel-images');
+const images = carousel.querySelectorAll('img');
+            index = (index + 1) % images.length;
+carousel.style.transform = `translateX(-${index * 100}%)`;
+        }
+        
+        setInterval(showNextImage, 3000); // Change l'image toutes les 3 secondes
+        
+
+        
+=======
 
         const hamburger = document.getElementById('hamburger');
         const navbarMenu = document.getElementById('navbar').querySelector('ul');
