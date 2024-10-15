@@ -33,6 +33,7 @@ carousel.style.transform = `translateX(-${index * 100}%)`;
 
         
 
+    
         const hamburger = document.getElementById('hamburger');
         const navbarMenu = document.getElementById('navbar').querySelector('ul');
         
@@ -46,15 +47,13 @@ carousel.style.transform = `translateX(-${index * 100}%)`;
         });
 
         function handleResize() {
-            if (window.innerWidth > 768) {
-                
+            if (window.innerWidth > 768) {  
                 navbarMenu.style.display = 'flex'; 
-                navbarMenu.style.flexDirection = 'row'; 
             } else {
-                
                 navbarMenu.style.display = 'none'; 
             }
         }
+        
         
         handleResize();
         
