@@ -19,7 +19,6 @@ var navbar = document.getElementById("navbar");
                 navbar.classList.remove("scrolled");
             }
         };
-<<<<<<< HEAD
 let index = 0;
 
     function showNextImage() {
@@ -33,7 +32,6 @@ carousel.style.transform = `translateX(-${index * 100}%)`;
         
 
         
-=======
 
         const hamburger = document.getElementById('hamburger');
         const navbarMenu = document.getElementById('navbar').querySelector('ul');
@@ -62,4 +60,3 @@ carousel.style.transform = `translateX(-${index * 100}%)`;
         
         
         window.addEventListener('resize', handleResize);
->>>>>>> cae4459dcfd06950e795b3be41ebf2ff6e816c97

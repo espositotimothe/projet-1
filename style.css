@@ -127,29 +127,35 @@ header {
     padding-top: 80px;
 }
 
-main {
-
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-
 .éthique {
-    max-width: 50%;
     flex: 1;
+    margin-right: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
     margin-bottom: auto;
     position: relative;
-    background: white; 
-    flex-direction: column;
+    background: white;
+    flex-direction: row;
     margin-top: auto;
-    align-items: flex-start; 
+    align-items: flex-start;
     display: inline-flex"
-
 }
 
+.carousel {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
 
-.éthique h2 {
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px; /* Espacement entre les images */
+}
+
+.texte h2 {
     color: #000;
     font-family: "Aguafina Script";
     font-size: 5rem;
@@ -158,11 +164,10 @@ main {
     line-height: normal;
     width: 100%;
     height: 100%;
-    text-align:left
-    
+    text-align:center
 }
 
-.éthique p {
+.équipe.texte p {
     color: #000;
     font-family: Roboto;
     font-size: 2rem;
@@ -174,37 +179,60 @@ main {
     word-wrap: break-word;
 
 }
-
-.carousel {
-    
-    pos
-position: relative;
-    
- 
-overflow: hidden;
-    width: 600px; /* Adjust as needed */
-    
-    heig
-height: 400px; /* Adjust as needed */
+.equipe {
+    text-align: center;
+}
+ .équipe h2 {
+    color: #000;
+    font-family: "Aguafina Script";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: 100%;
+    text-align:center 
+ }
+.membre {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
 }
 
-.carousel-images {
+.membre img {
+    width: 300px;
+    height: auto;
+    transition: opacity 0.5s ease; /* Transition pour l'opacité */
+}
+
+.membre .texte {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white;
     display: flex;
-    
-    transit
-transition: transform 0.5s ease;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Par défaut, le texte est invisible */
+    transition: opacity 0.5s ease; /* Transition pour l'apparition du texte */
+    padding: 20px;
+}
+
+.membre:hover img {
+    opacity: 0.5; /* Réduit la visibilité de l'image lorsqu'on passe la souris */
+}
+
+.membre:hover .texte {
+    opacity: 1; /* Le texte devient visible lors du survol */
 }
 
 
-.carousel-images img {
+
     
-    wi
-width: 100%;
-    
-    
-height: auto;
-    
-  
-flex-shrink: 0;
-}
+
+
 
