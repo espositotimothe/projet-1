@@ -78,6 +78,83 @@ header img {
     margin-left: auto;
     margin-right: auto;
     width: 600px;
-    padding-top: 0;
-        
+    padding-top: 0;      
+}
+
+
+
+.container {
+    display: flex;
+    padding: 5%; 
+    background-color: #F5F5DC;
+    margin: 5% 0; 
+    justify-content: space-around;
+}
+
+footer .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+footer .logos {
+    width: 20%;
+    margin: 1rem 0; 
+}
+
+footer .logos img {
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); 
+    width: 6.25rem; 
+    margin: 0.625rem 0; 
+    border-radius: 30%; 
+}
+
+footer .logos img:hover {
+    transform: translateY(0.125rem); 
+    box-shadow: 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.6); 
+}
+
+img.M {
+    width: 18.75rem; 
+}
+
+footer .liens ul, .contact ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    border: 0.0625rem solid #000; 
+    height: 100%;
+    justify-content: space-evenly
+}
+
+.bold {
+    font-weight: bold;
+}
+
+footer .liens li, .contact li {
+    margin: 3% 0; 
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+footer .contact li {
+    font-weight: normal;
+    text-align: left;
+    display: flex;
+    margin: 4% 0; 
+}
+
+footer .hover-underline:hover {
+    text-decoration: underline;
+}
+
+footer .icon {
+    font-size: 1.25rem; 
+    margin-right: 0.625rem;
 }
