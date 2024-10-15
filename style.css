@@ -5,6 +5,291 @@
     --text: black;
 }
 
+header nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent; 
+    transition: background-color 0.3s ease; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header>nav.scrolled {
+    background-color: #E5c07B;
+}
+
+header nav ul {
+    display: flex;
+    padding-left: 2%;
+    border: none;
+    gap: 35px;
+    align-items: center;
+        
+}
+
+header nav li a {
+    display: flex;
+   text-decoration: none;
+    color: var(--text);
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 500;
+    font-size: 50px;
+    
+    
+}
+
+li a:hover {
+    
+    border-bottom: 1px solid #000;
+}
+
+li a:active {
+        transform: scale(0.95);
+    }
+
+    
+nav button {
+    background-color: black;
+    text-decoration: none;
+    color: gold; 
+    border: 2px solid #F1C40F; 
+    padding: 15px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.3s, background-color 0.3s, transform 0.4s; 
+    padding: 20px 30px 15px 30px;
+    margin: 20px 10px;
+}
+
+nav button a {
+    text-decoration: none;
+    color: #F1C40F;
+}
+
+nav button::before {
+    content: 'Bientôt Disponible';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black; 
+    background-color: gold;
+    transform: translateY(100%);
+    transition: transform 0.4s;
+    
+    
+}
+
+nav button:hover {
+    color: black;
+    background-color: gold; 
+}
+
+nav button:hover::before {
+    transform: translateY(0); 
+}
+
+nav button:hover {
+    transform: scale(1.05); 
+}
+
+nav button:active {
+    transform: scale(0.95);
+}
+       
+
+header {
+    background-image: url(images/headeur.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+}
+
+.logo {
+    width: 600px; 
+    height: auto; 
+    padding: 5px;
+    background-color: transparent;
+    display: block;
+    margin: 0 auto; 
+    padding-top: 80px;
+}
+
+
+.ethique {
+    max-width: 80%;
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+    margin-bottom: auto;
+    position: relative;
+    background: white;
+    flex-direction: row;
+    margin-top: auto;
+    align-items: flex-start;
+    display: inline-flex;
+    margin-top: auto;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#text-container {
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+.carousel {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px; /* Espacement entre les images */
+}
+
+.texte h2 {
+text-align: center;
+}
+
+.ethique h2 {
+    padding: 100px;
+    color: #000;
+    font-family: "Aguafina Script";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: 100%;
+    text-align:center
+}
+
+.équipe.texte p {
+    text-align: center;
+
+}
+
+.ethique p {
+    color: #000;
+    font-family: Roboto;
+    padding: 50px;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+    width: 90%;
+    height: 100%;
+    word-wrap: break-word;
+
+}
+.equipe {
+    text-align: center;
+}
+ .équipe h2 {
+    color: #000;
+    font-family: "Aguafina Script";
+    font-size: 5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    height: 100%;
+    text-align:center 
+ }
+.membre {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.membre img {
+    width: 300px;
+    height: auto;
+    transition: opacity 0.5s ease; /* Transition pour l'opacité */
+}
+
+.membre .texte {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Par défaut, le texte est invisible */
+    transition: opacity 0.5s ease; /* Transition pour l'apparition du texte */
+    padding: 20px;
+}
+
+.membre:hover img {
+    opacity: 0.5; /* Réduit la visibilité de l'image lorsqu'on passe la souris */
+}
+
+.membre:hover .texte {
+    opacity: 1; /* Le texte devient visible lors du survol */
+}
+
+
+
+    
+
+
+
+.carousel-container {
+    position: relative;
+    width: 60%; 
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 1s ease; 
+    width: 300%; 
+}
+
+
+.carousel-img {
+    width: auto;
+    height: auto; 
+    flex-shrink: 0; 
+}
+
+
+.carousel-container img {
+    object-fit: cover;
+    height: auto; 
+}
+
+.m {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+}
+
+
 main {
 }
 .carte{
