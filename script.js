@@ -19,22 +19,7 @@ var navbar = document.getElementById("navbar");
                 navbar.classList.remove("scrolled");
             }
         };
-<<<<<<< HEAD
-let index = 0;
-
-    function showNextImage() {
-const carousel = document.querySelector('.carousel-images');
-const images = carousel.querySelectorAll('img');
-            index = (index + 1) % images.length;
-carousel.style.transform = `translateX(-${index * 100}%)`;
-        }
-        
-        setInterval(showNextImage, 3000); // Change l'image toutes les 3 secondes
-        
-
-        
-=======
-
+    
         const hamburger = document.getElementById('hamburger');
         const navbarMenu = document.getElementById('navbar').querySelector('ul');
         
@@ -48,37 +33,14 @@ carousel.style.transform = `translateX(-${index * 100}%)`;
         });
 
         function handleResize() {
-            if (window.innerWidth > 768) {
-                
+            if (window.innerWidth > 768) {  
                 navbarMenu.style.display = 'flex'; 
-                navbarMenu.style.flexDirection = 'row'; 
             } else {
-                
                 navbarMenu.style.display = 'none'; 
             }
         }
         
+        
         handleResize();
         
-        
-        window.addEventListener('resize', handleResize);
-
-       let currentIndex = 0;
-const images = document.querySelectorAll('.carousel-img');
-const totalImages = images.length;
-const carousel = document.querySelector('.carousel');
-
-
-function updateCarousel() {
-    const translateXValue = -currentIndex * 100; 
-    carousel.style.transform = `translateX(${translateXValue}%)`;
-}
-
-
-function nextImage() {
-    currentIndex = (currentIndex + 1) % totalImages; 
-    updateCarousel();
-}
-
-
-setInterval(nextImage, 3000);
+            window.addEventListener('resize', handleResize);

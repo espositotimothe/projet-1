@@ -52,7 +52,7 @@ li a:active {
     }
 
     
-button {
+nav button {
     background-color: black;
     text-decoration: none;
     color: gold; 
@@ -69,12 +69,12 @@ button {
     margin: 20px 10px;
 }
 
-button a {
+nav button a {
     text-decoration: none;
     color: #F1C40F;
 }
 
-button::before {
+nav button::before {
     content: 'Bientôt Disponible';
     position: absolute;
     top: 0;
@@ -92,20 +92,20 @@ button::before {
     
 }
 
-button:hover {
+nav button:hover {
     color: black;
     background-color: gold; 
 }
 
-button:hover::before {
+nav button:hover::before {
     transform: translateY(0); 
 }
 
-button:hover {
+nav button:hover {
     transform: scale(1.05); 
 }
 
-button:active {
+nav button:active {
     transform: scale(0.95);
 }
        
@@ -199,4 +199,10 @@ header {
 .carousel-container img {
     object-fit: cover;
     height: auto; 
+}
+
+.m {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
 }
