@@ -1,3 +1,34 @@
+
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        const navHeight = document.querySelector('nav').offsetHeight;
+        const offset = 8; // Décalage en vh
+
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - (navHeight + (window.innerHeight * offset / 100));
+
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
+    });
+});
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.getElementById("loading").style.display = "none";
+    }, 2000); // 3-second loading screen
+});
+
+
 const button = document.getElementById('reservationButton');
 
 button.addEventListener('mouseover', function() {
@@ -59,3 +90,4 @@ carousel.style.transform = `translateX(-${index * 100}%)`;
         
         
         window.addEventListener('resize', handleResize);
+
