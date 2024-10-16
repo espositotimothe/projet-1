@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 document.querySelectorAll('nav a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -23,7 +22,6 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
 
 
-=======
 document.addEventListener("DOMContentLoaded", function() {
     setTimeout(function() {
         document.getElementById("loading").style.display = "none";
@@ -31,7 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
->>>>>>> f389b5f3fd75e779b6510e08f35754fa2de798e2
 const button = document.getElementById('reservationButton');
 
 button.addEventListener('mouseover', function() {
