@@ -166,7 +166,7 @@ header {
 .carousel img {
     max-width: 100%;
     height: auto;
-    margin-left: 10px; /* Espacement entre les images */
+    margin-left: 10px;
 }
 
 .texte h2 {
@@ -186,7 +186,7 @@ text-align: center;
     text-align:center
 }
 
-.équipe.texte p {
+.equipe.texte p {
     text-align: center;
 
 }
@@ -207,7 +207,7 @@ text-align: center;
 .equipe {
     text-align: center;
 }
- .équipe h2 {
+ .equipe h2 {
     color: #000;
     font-family: "Aguafina Script";
     font-size: 5rem;
