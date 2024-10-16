@@ -15,7 +15,7 @@ header nav {
     z-index: 1000;
     display: flex;
     justify-content: space-between;
-    
+        
 }
 
 header>nav.scrolled {
@@ -24,26 +24,28 @@ header>nav.scrolled {
 
 header nav ul {
     display: flex;
-    padding-left: 2%;
+    padding-left: 4%;
     border: none;
     gap: 35px;
     align-items: center;
-        
+       
 }
 
 header nav li a {
     display: flex;
-   text-decoration: none;
+    text-decoration: none;
     color: var(--text);
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-size: 50px;
-    
+    text-shadow: 2px 2px 4px rgb(0, 0, 0, 0.5);
+          
     
 }
 
 li a:hover {
-    
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7); 
+    transform: scale(1.05);    
     border-bottom: 1px solid #000;
 }
 
@@ -67,6 +69,7 @@ nav button {
     transition: color 0.3s, background-color 0.3s, transform 0.4s; 
     padding: 20px 30px 15px 30px;
     margin: 20px 10px;
+    margin-right: 20px;
 }
 
 nav button a {
