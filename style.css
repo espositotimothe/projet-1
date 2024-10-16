@@ -1,3 +1,35 @@
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5DC;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-logo {
+    width: 500px;
+    margin-bottom: 20px; 
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #F1C40F;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 :root {
     --gold:  #F1C40F;
     --white:  #ffffff;
@@ -218,63 +250,100 @@ text-align: center;
     100% { transform: translateX(-200%); }
 }
 
-.chef {
+.chef{
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: space-between;
+    margin: 10%;
+    height: 80vh;
 }
-
-.chef .image {
-    margin-right: 20px; /* Espace entre l'image et le texte */
-}
-
-.chef img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px; 
-}
-
-.chef-info {
-    max-width: 600px;
-}
-
-.chef h2 {
-    margin: 0;
-    font-size: 24px;
-    text-align: right;
-}
-
-.chef p {
-    margin: 10px 0 0;
-    text-align: right;
-
-}
-
-.chef article {
+.chef figure{
+    width: 50%;
     display: flex;
-    display: inline-block;
 }
-
-.equipe {
+.chef figure img{
+    width:auto;
+    padding-left: 15%;
+}
+.chef article{
+    height: 80%;
+    width: 50%;
+    
+}
+.chef article h2{
     text-align: center;
-
+    padding-bottom: 10%;
 }
+.chef article p{
+    padding-bottom: 25%;
+    }
+
  .equipe h2 {
     color: #000;
     font-family: "Aguafina Script";
     font-size: 6rem;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
     margin-top: auto;
  }
  .equipe.texte p {
     text-align: center;
     }
     
-.membre {
-    position: relative;
-    display: inline-block;
-    margin: auto;
-    justify-content: space-between;
+.equipe {
+        display: flex;
+        justify-content: center; /* Espacement égal entre les membres */
+        gap: 20px; /* Espace entre chaque membre */
+        margin: 20px 0;
+        flex-direction: row;
+        align-items: center;
+        height: 80%;
+    }
+    .membre {
+        display: flex;
+        justify-content: space-around; /* Espace entre les images */
+        gap: 20px; /* Espace entre chaque membre */
+        margin-top: 20px;
+    }
+    
+    .membre-item {
+        position: relative;
+        width: 30%; /* Chaque membre occupe 30% de la largeur disponible */
+        overflow: hidden;
+    }
+    
+    .membre-item img {
+        width: 80%; /* L'image occupe toute la largeur du membre */
+        height: auto;
+        display: block;
+    }
+    
+    .texte {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0; /* Le texte est invisible par défaut */
+        transition: opacity 0.5s ease;
+        padding: 20px;
+    }
+    
+    .membre-item:hover .texte {
+        opacity: 1; /* Le texte apparaît au survol de l'image */
+    }
+    
+    .texte p {
+        margin: 0;
+        word-wrap: break-word;
+        max-height: 100%; /* Assure que le texte ne dépasse pas */
+        overflow-y:; /* Si le texte dépasse, défilement */
+    }
+    
     
 }
 
@@ -310,7 +379,7 @@ text-align: center;
     opacity: 1; /* Le texte devient visible lors du survol */
 }
 
-#m {
+.m {
     display: flex;
     justify-content: center;
     max-width: 100%;
