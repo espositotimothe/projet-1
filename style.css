@@ -136,6 +136,29 @@ header {
     margin: 10%;
     height: 80vh;
 }
+
+#text-container {
+    flex: 1;
+    margin-right: 20px;
+
+}
+
+.carousel {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 10px;
+}
+
+.texte h2 {
+text-align: center;
+}
+
 .ethique h2 {
     font-family: "Aguafina Script";
     font-size: 6rem;
@@ -145,6 +168,7 @@ header {
 .ethique article {
     width: 40%;
 }
+
 
 .ethique figure {
     width: 40%;
@@ -232,12 +256,17 @@ header {
     text-align: center;
 
 }
- .équipe h2 {
+ .equipe h2 {
+    color: #000;
     font-family: "Aguafina Script";
     font-size: 6rem;
     margin-bottom: 5%;
     margin-top: auto;
  }
+ .equipe.texte p {
+    text-align: center;
+    }
+    
 .membre {
     position: relative;
     display: inline-block;
@@ -289,17 +318,34 @@ header {
     display: flex;
     justify-content: space-around;
     margin: 10%;
-
+    height: 80vh;
+}
+.carte article{
+    height: 80%;
+    width: 40%;
+}
+.carte article h2{
+    text-align: center;
+    padding-bottom: 10%;
+}
+.carte article p{
+    padding-bottom: 25%;
+}
+.carte figure{
+    height: 100% ;
+}
+.carte figure img{
+    height: 100%;
 }
 
 h2{
     font-family: "Aguafina Script";
     font-size: 6rem;
-    margin-bottom: 30%;
+
 }
 p{
     font-family: "Open Sans";
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .btn {
@@ -319,13 +365,13 @@ p{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
   }
   
-  .grandeimage{
-    height: 100vh;
-    display: flex;
+  .gimage{
+    width: 100vw;
   }
-  .grandeimage img{
-    justify-content: center;
+  .gimage img{
+    width: 100%;
   }
+
 
   .carroussel-plat {
     margin: 10%;
@@ -341,35 +387,65 @@ p{
     padding: 10%;
     font-family: "Cormorant Garamond";
   }
-  .carroussel-plat img{
+.carroussel-plat img{
     height: 90%;
   }
 
-  .citation {
+.citation {
     margin: 7%;
     display: block;
 
 
   }
-  .citation p{
+.citation p{
     text-align: center;
+    font-size: 2rem;
   }
-  .citation h3{
+.citation h3{
       font-family: "Ballet";
       font-size: 5rem;
       text-align: center;
   }
-
-  .vin {
+.vin{
     display: flex;
     justify-content: space-around;
-  }
+    margin: 10%;
+    height: 80vh;
+}
+.vin figure{
+    width: 50%;
+    display: flex;
+}
+.vin figure img{
+    width: 100%;
+}
+.vin article{
+    height: 80%;
+    width: 40%;
+}
+.vin article h2{
+    text-align: center;
+    padding-bottom: 10%;
+}
+.vin article p{
+    padding-bottom: 25%;
+}
+.certif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.certif img{
+    width: 100%;
+}
+.certif .certimg img{
+    width: 100%;
+}
 
-  .container {
+footer .container {
     display: flex;
     padding: 5%; 
     background-color: #F5F5DC;
-    margin: 5% 0; 
     justify-content: space-around;
 }
 
@@ -384,8 +460,13 @@ footer .logos {
     width: 20%;
     margin: 1rem 0; 
 }
+footer .inter{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
 
-footer .logos img {
+footer .logos .inter img {
     transition: transform 0.2s, box-shadow 0.2s;
     box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); 
     width: 6.25rem; 
@@ -393,13 +474,13 @@ footer .logos img {
     border-radius: 30%; 
 }
 
-footer .logos img:hover {
+footer .logos .inter img:hover {
     transform: translateY(0.125rem); 
     box-shadow: 0 0.1875rem 0.4375rem rgba(0, 0, 0, 0.6); 
 }
 
-img.M {
-    width: 18.75rem; 
+footer .logos img.M {
+    width: 25em;
 }
 
 footer .liens ul, .contact ul {
@@ -408,7 +489,7 @@ footer .liens ul, .contact ul {
     width: 80%;
     display: flex;
     flex-direction: column;
-    border: 0.0625rem solid #000; 
+    
     height: 100%;
     justify-content: space-evenly
 }
@@ -434,6 +515,9 @@ footer .contact li {
 
 footer .hover-underline:hover {
     text-decoration: underline;
+    text-decoration-color: gold;
+    gap: 2%;
+    text-underline-offset: 4px;
 }
 
 footer .icon {
