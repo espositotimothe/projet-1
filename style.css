@@ -401,10 +401,17 @@ p{
   }
   
   .gimage{
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+ 
   }
   .gimage img{
-    width: 100%;
+    height: 100%;
+    border: 2px solid white; /* Couleur de la bordure */
+    border-radius: 15px; /* Arrondi des coins */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre */
+    overflow: hidden; /* Pour s'assurer que l'image ne déborde pas */
   }
 
 
@@ -425,6 +432,9 @@ p{
 .carroussel-plat img{
     height: 90%;
   }
+.carroussel-plat figure{
+    width: 60%;
+}
 
 .citation {
     margin: 7%;
