@@ -109,7 +109,6 @@ nav button:active {
     transform: scale(0.95);
 }
        
-
 header {
     background-image: url(images/headeur.jpg);
     background-size: cover;
@@ -132,100 +131,123 @@ header {
 }
 
 .ethique {
-    max-width: 80%;
-    flex: 1;
-    margin-right: 20px;
-    text-align: left;
     display: flex;
     justify-content: space-between;
-    max-width: 50%;
-    margin-bottom: auto;
-    position: relative;
-    background: white;
-    flex-direction: row;
-    margin-top: auto;
-    align-items: flex-start;
-    display: inline-flex;
-    margin-top: auto;
-    align-items: flex-start;
-    justify-content: space-between;
+    margin: 10%;
+    height: 80vh;
 }
-
-#text-container {
-    flex: 1;
-    margin-right: 20px;
-
-}
-
-.carousel {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.carousel img {
-    max-width: 100%;
-    height: auto;
-    margin-left: 10px; /* Espacement entre les images */
-}
-
-.texte h2 {
-text-align: center;
-}
-
 .ethique h2 {
-    padding: 100px;
-    color: #000;
     font-family: "Aguafina Script";
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 100%;
-    height: 100%;
-    text-align:center
+    font-size: 6rem;
+    margin-bottom: 15%;
 }
 
-.équipe.texte p {
-    text-align: center;
+.ethique article {
+    width: 40%;
+}
 
+.ethique figure {
+    width: 40%;
 }
 
 .ethique p {
-    color: #000;
-    font-family: Roboto;
-    padding: 50px;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.6;
-    width: 90%;
-    height: 100%;
+    font-family: "Roboto";
+    font-size: 2rem; 
+    text-align: left;
     word-wrap: break-word;
+}
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    margin-top: 15%;
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    animation: slide 7s infinite;
+}
+
+.slide {
+    width: 100%;
+    flex: 1 0 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+}
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(0); }
+    38% { transform: translateX(-100%); }
+    71% { transform: translateX(-100%); }
+    76% { transform: translateX(-200%); }
+    100% { transform: translateX(-200%); }
+}
+
+.chef {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.chef .image {
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.chef img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+.chef-info {
+    max-width: 600px;
+}
+
+.chef h2 {
+    margin: 0;
+    font-size: 24px;
+    text-align: right;
+}
+
+.chef p {
+    margin: 10px 0 0;
+    text-align: right;
 
 }
+
+.chef article {
+    display: flex;
+    display: inline-block;
+}
+
 .equipe {
     text-align: center;
+
 }
  .équipe h2 {
-    color: #000;
     font-family: "Aguafina Script";
-    font-size: 5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 100%;
-    height: 100%;
-    text-align:center 
+    font-size: 6rem;
+    margin-bottom: 5%;
+    margin-top: auto;
  }
 .membre {
     position: relative;
     display: inline-block;
-    margin: 20px;
+    margin: auto;
+    justify-content: space-between;
+    
 }
 
 .membre img {
-    width: 300px;
+    width: auto;
     height: auto;
     transition: opacity 0.5s ease; /* Transition pour l'opacité */
 }
@@ -234,8 +256,8 @@ text-align: center;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
     color: white;
     display: flex;
@@ -245,6 +267,7 @@ text-align: center;
     opacity: 0; /* Par défaut, le texte est invisible */
     transition: opacity 0.5s ease; /* Transition pour l'apparition du texte */
     padding: 20px;
+    font-size: 10%;
 }
 
 .membre:hover img {
@@ -253,37 +276,6 @@ text-align: center;
 
 .membre:hover .texte {
     opacity: 1; /* Le texte devient visible lors du survol */
-}
-
-
-
-    
-
-
-
-.carousel-container {
-    position: relative;
-    width: 60%; 
-    overflow: hidden;
-}
-
-.carousel {
-    display: flex;
-    transition: transform 1s ease; 
-    width: 300%; 
-}
-
-
-.carousel-img {
-    width: auto;
-    height: auto; 
-    flex-shrink: 0; 
-}
-
-
-.carousel-container img {
-    object-fit: cover;
-    height: auto; 
 }
 
 .m {
