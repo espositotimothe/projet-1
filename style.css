@@ -1,3 +1,35 @@
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #F5F5DC;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-logo {
+    width: 500px;
+    margin-bottom: 20px; 
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #F1C40F;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 :root {
     --gold:  #F1C40F;
     --white:  #ffffff;
@@ -372,10 +404,17 @@ p{
   }
   
   .gimage{
-    width: 100vw;
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+ 
   }
   .gimage img{
-    width: 100%;
+    height: 100%;
+    border: 2px solid white; /* Couleur de la bordure */
+    border-radius: 15px; /* Arrondi des coins */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre */
+    overflow: hidden; /* Pour s'assurer que l'image ne déborde pas */
   }
 
 
@@ -396,6 +435,9 @@ p{
 .carroussel-plat img{
     height: 90%;
   }
+.carroussel-plat figure{
+    width: 60%;
+}
 
 .citation {
     margin: 7%;

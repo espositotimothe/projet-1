@@ -1,3 +1,10 @@
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        document.getElementById("loading").style.display = "none";
+    }, 2000); // 3-second loading screen
+});
+
+
 const button = document.getElementById('reservationButton');
 
 button.addEventListener('mouseover', function() {
