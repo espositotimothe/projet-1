@@ -297,17 +297,34 @@ text-align: center;
     display: flex;
     justify-content: space-around;
     margin: 10%;
-
+    height: 80vh;
+}
+.carte article{
+    height: 80%;
+    width: 40%;
+}
+.carte article h2{
+    text-align: center;
+    padding-bottom: 10%;
+}
+.carte article p{
+    padding-bottom: 25%;
+}
+.carte figure{
+    height: 100% ;
+}
+.carte figure img{
+    height: 100%;
 }
 
 h2{
     font-family: "Aguafina Script";
     font-size: 6rem;
-    margin-bottom: 30%;
+
 }
 p{
     font-family: "Open Sans";
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .btn {
@@ -327,13 +344,13 @@ p{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
   }
   
-  .grandeimage{
-    height: 100vh;
-    display: flex;
+  .gimage{
+    width: 100vw;
   }
-  .grandeimage img{
-    justify-content: center;
+  .gimage img{
+    width: 100%;
   }
+
 
   .carroussel-plat {
     margin: 10%;
@@ -349,31 +366,62 @@ p{
     padding: 10%;
     font-family: "Cormorant Garamond";
   }
-  .carroussel-plat img{
+.carroussel-plat img{
     height: 90%;
   }
 
-  .citation {
+.citation {
     margin: 7%;
     display: block;
 
 
   }
-  .citation p{
+.citation p{
     text-align: center;
+    font-size: 2rem;
   }
-  .citation h3{
+.citation h3{
       font-family: "Ballet";
       font-size: 5rem;
       text-align: center;
   }
-
-  .vin {
+.vin{
     display: flex;
     justify-content: space-around;
-  }
+    margin: 10%;
+    height: 80vh;
+}
+.vin figure{
+    width: 50%;
+    display: flex;
+}
+.vin figure img{
+    width: 100%;
+}
+.vin article{
+    height: 80%;
+    width: 40%;
+}
+.vin article h2{
+    text-align: center;
+    padding-bottom: 10%;
+}
+.vin article p{
+    padding-bottom: 25%;
+}
+.certif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.certif img{
+    width: 100%;
+}
+.certif .certimg img{
+    width: 100%;
+}
 
-  .container {
+.container {
     display: flex;
     padding: 5%; 
     background-color: #F5F5DC;
