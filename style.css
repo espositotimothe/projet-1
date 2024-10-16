@@ -133,7 +133,7 @@ header {
     padding-top: 80px;  
 }
 
-.ethique {
+#ethique {
     display: flex;
     justify-content: space-between;
     margin: 10%;
@@ -310,34 +310,34 @@ text-align: center;
     opacity: 1; /* Le texte devient visible lors du survol */
 }
 
-.m {
+#m {
     display: flex;
     justify-content: center;
     max-width: 100%;
 }
 
 
-.carte{
+#carte{
     display: flex;
     justify-content: space-around;
     margin: 10%;
     height: 80vh;
 }
-.carte article{
+#carte article{
     height: 80%;
     width: 40%;
 }
-.carte article h2{
+#carte article h2{
     text-align: center;
     padding-bottom: 10%;
 }
-.carte article p{
+#carte article p{
     padding-bottom: 25%;
 }
-.carte figure{
+#carte figure{
     height: 100% ;
 }
-.carte figure img{
+#carte figure img{
     height: 100%;
 }
 
@@ -371,15 +371,11 @@ p{
   .gimage{
     display: flex;
     justify-content: center;
-    height: 90vh;
+    width: 100%;
  
   }
   .gimage img{
-    height: 100%;
-    border: 2px solid white; /* Couleur de la bordure */
-    border-radius: 15px; /* Arrondi des coins */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Ombre */
-    overflow: hidden; /* Pour s'assurer que l'image ne déborde pas */
+    width: 100%;
   }
 
 
