@@ -290,6 +290,45 @@ p{
      margin-top: 20px;
 }
     
+    .membre-item {
+        position: relative;
+        width: 30%; /* Chaque membre occupe 30% de la largeur disponible */
+        overflow: hidden;
+    }
+    
+    .membre-item img {
+        width: 80%; /* L'image occupe toute la largeur du membre */
+        height: auto;
+        display: block;
+    }
+    
+    .texte {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        opacity: 0; /* Le texte est invisible par défaut */
+        transition: opacity 0.5s ease;
+        padding: 20px;
+    }
+    
+    .membre-item:hover .texte {
+        opacity: 1; /* Le texte apparaît au survol de l'image */
+    }
+    
+    .texte p {
+        margin: 0;
+        word-wrap: break-word;
+        max-height: 100%; /* Assure que le texte ne dépasse pas */
+        overflow-y:hidden; /* Si le texte dépasse, défilement */
+    }
 .membre-item {
     position: relative;
     width: 30%; /* Chaque membre occupe 30% de la largeur disponible */
@@ -327,7 +366,7 @@ p{
      margin: 0;
      word-wrap: break-word;
      max-height: 100%; /* Assure que le texte ne dépasse pas */
-     overflow-y:; /* Si le texte dépasse, défilement */
+     overflow-y:hidden; /* Si le texte dépasse, défilement */
  }
 .membre h2{
     padding-bottom: 10%;
