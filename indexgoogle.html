@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Google Search</title>
+  <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/stylegoogle.css">
+</head>
+
+<body>
+  <div class="container" spellcheck="false">
+    <section class="google-search-section">
+      <img class="google-logo-image" alt="Google" src="https://www.google.co.in/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" />
+      <form class="google-search-form" action="searches.html" method="GET">
+        <main class="google-search-field">
+          <input class="google-search-input" name="query" type="text" placeholder="Enter your search here" />
+          <span class="google-search-voice-icon"></span>
+          <div class="google-search-autocomplete">
+            <ul class="google-search-autocomplete-list">
+              <li class="google-search-autocomplete-item">
+                <a href="#" class="autocomplete-suggestion" contenteditable>
+                  Kebab de Klèr
+                </a>
+                <a href="#remove" class="autocomplete-suggestion-remove">Remove</a>
+              </li>
+              <li class="google-search-autocomplete-item">
+                <a href="#" class="autocomplete-suggestion" contenteditable>
+                  Hot Dog de Tidus
+                </a>
+                <a href="#remove" class="autocomplete-suggestion-remove">Remove</a>
+              </li>
+              <li class="google-search-autocomplete-item">
+                <a href="#" class="autocomplete-suggestion" contenteditable>
+                  Chicken d'Augustin
+                </a>
+                <a href="#remove" class="autocomplete-suggestion-remove">Remove</a>
+              </li>
+              <li class="google-search-autocomplete-item">
+                <a href="#" class="autocomplete-suggestion" contenteditable>
+                  Brian is in the kitchen
+                </a>
+                <a href="#remove" class="autocomplete-suggestion-remove">Remove</a>
+              </li>
+              <li class="google-search-autocomplete-item">
+                <a href="#" class="autocomplete-suggestion" contenteditable>
+                  Restaurant Millésime
+                </a>
+                <a href="#remove" class="autocomplete-suggestion-remove">Remove</a>
+              </li>
+              <li class="google-search-autocomplete-item">
+                <a href="#" class="autocomplete-suggestion" contenteditable>
+                  Les Saucisses de Mickäel et Brian
+                </a>
+                <a href="#remove" class="autocomplete-suggestion-remove">Remove</a>
+              </li>
+              <li class="google-search-autocomplete-item">
+                <a href="#" class="autocomplete-suggestion" contenteditable>
+                  Le Bicentenaire d'Edwige
+                </a>
+                <a href="#remove" class="autocomplete-suggestion-remove">Remove</a>
+              </li>
+            </ul>
+          </div>
+        </main>
+        <div class="google-search-actions">
+          <button class="google-button google-search-button" type="submit">
+            Google Search
+          </button>
+          <button class="google-button google-lucky-button" type="button">
+            I'm Feeling Lucky
+          </button>
+        </div>
+      </form>
+    </section>
+  </div>
+  <script src="js/index.js"></script>
+</body>
+</html>

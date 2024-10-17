@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results - Google</title>
+  <link rel="icon" href="imagesgoogle/favicon-32x32.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/searches.css">
+</head>
+
+<body>
+  <div class="container">
+    
+    <div class="google-logo">
+        <a href="indexgoogle.html">
+      <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png" alt="Google Logo">
+        </a>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+      <form action="searches.html" method="GET">
+        <input type="text" name="query" value="">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    
+    <div class="main-content">
+        <section class="search-results">
+        <div class="result-item">
+          <img src="imagesgoogle/eclair-de-genie-framboise.jpg" alt="EKlèr" class="result-image">
+          <div class="result-text">
+            <a href="#">E-Claire</a>
+            <div class="link">www.e-kler.com</div>
+            <p>★★★★☆ 4.5/5</p>
+            <div class="description">Situé au cœur de la ville, E-Claire propose une aventure sucrée où chaque bouchée est un pas de danse... Oui, même votre dessert peut vous faire faire la salsa !</div>
+          </div>
+        </div>
+
+        <div class="result-item">
+          <img src="imagesgoogle/hotdog.jpg" alt="Hot Dog de Tidus" class="result-image">
+          <div class="result-text">
+            <a href="#">Hot Dog de Tidus</a>
+            <div class="link">www.tidushotdog.fr</div>
+            <p>★★★☆☆ 3.8/5</p>
+            <div class="description">Les célèbres hot-dogs de Tidus ! Bien plus qu’un simple sandwich, ces chiens sont tellement bons qu'ils pourraient même faire fondre un cœur de pierre... mais pas trop, sinon c'est la catastrophe !</div>
+          </div>
+        </div>
+
+        <div class="result-item">
+          <img src="imagesgoogle/churras.jpg" alt="Brian kitchen" class="result-image">
+          <div class="result-text">
+            <a href="#">Brian is in the Kitchen</a>
+            <div class="link">www.kitchenofbrian.com</div>
+            <p>★★★☆☆ 3.5/5</p>
+            <div class="description">Entrez dans la cuisine secrète de Brian, où chaque kebab est une explosion de saveurs...<br> et de malice !</div>
+          </div>
+        </div>
+
+          <div class="result-item">
+            <img src="imagesgoogle/edwige.jpg" alt="Le Bicentenaire d'Edwige" class="result-image">
+            <div class="result-text">
+              <a href="#">Le Bicentenaire d'Edwige</a>
+              <div class="link">www.vieuxrestau.fr</div>
+              <p>★★★★☆ 4.3/5</p>
+              <div class="description">Un restaurant si ancien qu'il a déjà servi des plats aux ancêtres de vos ancêtres.</div>
+            </div>
+          </div>
+
+          <div class="result-item">
+            <img src="imagesgoogle/chicken.jpg" alt="Augustin Chicken" class="result-image">
+            <div class="result-text">
+              <a href="#">Chicken d'Augustin</a>
+              <div class="link">www.restaurantdaugustin.fr</div>
+              <p>★★★★☆ 4.0/5</p>
+              <div class="description">Savourez les meilleurs plats de poulet au Restaurant d'Augustin, un favori parmi les locaux.</div>
+            </div>
+          </div>
+
+        <div class="result-item">
+          <img src="imagesgoogle/mickael.jpeg" alt="Mike Saucisse" class="result-image">
+          <div class="result-text">
+            <a href="#">La Saucisse de Mickaël</a>
+            <div class="link">www.mikesaucisse.fr</div>
+            <p>★★★★☆ 4.8/5</p>
+            <div class="description">Connu pour leurs saucisses délicieuses, ce restaurant est un lieu incontournable pour les amateurs de viande.</div>
+          </div>
+        </div>
+
+        <div class="result-item">
+            <img src="imagesgoogle/headeur.jpg" alt="Restaurant Millésime" class="result-image">
+            <div class="result-text">
+              <a href="file:///C:/Users/gusta/Desktop/wcs/projets/projet-1/index.html" target="_blank">Restaurant Millésime***</a>
+              <div class="link">www.restaurantmillesime.com</div>
+              <p>★★★★★ 5/5</p>
+              <div class="description">Restaurant Millésime est réputé pour sa cuisine 3 étoiles et son atmosphère élégante.</div>
+            </div>
+        </div>
+      </section>
+
+      <section class="map-section">
+        <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.910716836715!2d2.3522213156747463!3d48.85661407928703!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f1f0f7ed1ab%3A0x6b81e91cd7c573c2!2sEiffel%20Tower!5e0!3m2!1sen!2sus!4v1633814080753!5m2!1sen!2sus" 
+              width="100%" 
+              height="300" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+        </div>
+        <div class="other-restaurants">
+            <img src="imagesgoogle/other_restau.png" alt="Additional Information" class="other-restaurants-image">
+        </div>
+    </section>
+    
+    </div>
+  </div>
+
+  <script>
+    // Get the search query from the URL
+    const params = new URLSearchParams(window.location.search);
+    const searchQuery = params.get('query');
+
+    // Display the search query in the input field if it exists
+    if (searchQuery) {
+      document.querySelector('input[name="query"]').value = searchQuery;
+    }
+  </script>
+</body>
+
+</html>

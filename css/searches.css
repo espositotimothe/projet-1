@@ -1,0 +1,154 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; /* No margins */
+  padding: 0; /* No paddings */
+  background-color: #fff;
+  color: #202124;
+}
+
+
+.container {
+  max-width: 1300px;
+  margin: 0; /* Centering the container */
+  padding: 20px 16px;
+}
+
+
+.google-logo {
+  display: block;
+  margin: 20px auto;
+  margin-left: 20px;
+}
+
+
+.search-bar {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: left;
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 250%;
+  max-width: 600px;
+  height: 44px;
+  padding: 0 15px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  margin-left: 10px;
+  gap: 5px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #f8f9fad7;
+  border: 1px solid #dfe1e5;
+  border-radius: 4px;
+  color: #5f6368;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #e8eaed;
+}
+
+
+.main-content {
+  display: flex; 
+  justify-content: space-between; 
+}
+
+
+.search-results {
+  flex: 0 0 75%; 
+  margin-right: 20px; 
+}
+
+.result-item {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.result-image {
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 180px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.result-text {
+  flex: 1;
+}
+
+.result-item a {
+  font-size: 22px;
+  color: #1a0dab;
+  text-decoration: none;
+}
+
+.result-item a:hover {
+  text-decoration: underline;
+}
+
+.result-item .link {
+  color: #006621;
+  font-size: 14px;
+}
+
+.result-item .description {
+  font-size: 18px;
+  color: #4d5156;
+}
+
+
+.map-section {
+  flex: 0 0 45%; /* Adjust width to fit better */
+  position: relative;
+  display: flex; /* Use flexbox to stack map and image */
+  flex-direction: column; /* Stack items vertically */
+}
+
+.map-container {
+  flex: 1; /* Take up available space */
+}
+
+.map-section iframe {
+  width: 120%; /* Make map responsive */
+  height: 600px; /* Fixed height for the map */
+  border: 0; /* Remove border */
+}
+
+.other-restaurants {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the image */
+  
+}
+
+.other-restaurants-image {
+  max-width: 120%; /* Make sure image is responsive */
+  height: 700px; /* Maintain aspect ratio */
+  justify-content: flex-start;
+}
+
+p {
+  margin: auto;
+}
+
+.rating {
+  color: gold;
+  font-size: 18px; 
+  display: flex; 
+  align-items: center; 
+  margin-top: 5px; 
+}
+.score {
+  margin-left: 5px; 
+  font-size: 16px; 
+  color: #666; 
+}
