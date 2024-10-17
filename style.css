@@ -164,6 +164,18 @@ header {
     margin: 0 auto; 
     padding-top: 80px;  
 }
+h2{
+    font-family: "Aguafina Script";
+    font-size: 6rem;
+    text-align: center;
+}
+p{
+    font-family: "Open Sans";
+    font-size: 1.3rem;
+    padding: 3%;
+    line-height: 1.2;
+}
+
 
 #ethique {
     display: flex;
@@ -172,17 +184,6 @@ header {
     height: 80vh;
 }
 
-#text-container {
-    flex: 1;
-    margin-right: 20px;
-
-}
-
-.carousel {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-}
 
 .carousel img {
     max-width: 100%;
@@ -190,30 +191,15 @@ header {
     margin-left: 10px;
 }
 
-.texte h2 {
-text-align: center;
+#ethique article {
+    width: 50%;
+}
+#ethique article h2{
+    padding-bottom: 15%;
 }
 
-.ethique h2 {
-    font-family: "Aguafina Script";
-    font-size: 6rem;
-    margin-bottom: 15%;
-}
-
-.ethique article {
+#ethique figure {
     width: 40%;
-}
-
-
-.ethique figure {
-    width: 40%;
-}
-
-.ethique p {
-    font-family: "Roboto";
-    font-size: 2rem; 
-    text-align: left;
-    word-wrap: break-word;
 }
 
 .carousel {
@@ -222,7 +208,7 @@ text-align: center;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 100%;
-    margin-top: 15%;
+
 }
 
 .slides {
@@ -250,30 +236,30 @@ text-align: center;
     100% { transform: translateX(-200%); }
 }
 
-.chef{
+#chef{
     display: flex;
     justify-content: space-between;
     margin: 10%;
     height: 80vh;
 }
-.chef figure{
+#chef figure{
     width: 50%;
     display: flex;
 }
-.chef figure img{
+#chef figure img{
     width:auto;
     padding-left: 15%;
 }
-.chef article{
+#chef article{
     height: 80%;
     width: 50%;
     
 }
-.chef article h2{
+#chef article h2{
     text-align: center;
     padding-bottom: 10%;
 }
-.chef article p{
+#chef article p{
     padding-bottom: 25%;
     }
 
@@ -289,20 +275,20 @@ text-align: center;
     }
     
 .equipe {
-        display: flex;
-        justify-content: center; /* Espacement égal entre les membres */
-        gap: 20px; /* Espace entre chaque membre */
-        margin: 20px 0;
-        flex-direction: row;
-        align-items: center;
-        height: 80%;
-    }
-    .membre {
-        display: flex;
-        justify-content: space-around; /* Espace entre les images */
-        gap: 20px; /* Espace entre chaque membre */
-        margin-top: 20px;
-    }
+    display: flex;
+    justify-content: center; /* Espacement égal entre les membres */
+    gap: 20px; /* Espace entre chaque membre */
+   margin: 20px 0;
+    flex-direction: row;
+    align-items: center;
+    height: 80%;
+}
+.membre {
+    display: flex;
+    justify-content: space-around; /* Espace entre les images */
+    gap: 20px; /* Espace entre chaque membre */
+     margin-top: 20px;
+}
     
     .membre-item {
         position: relative;
@@ -343,10 +329,48 @@ text-align: center;
         max-height: 100%; /* Assure que le texte ne dépasse pas */
         overflow-y:hidden; /* Si le texte dépasse, défilement */
     }
+.membre-item {
+    position: relative;
+    width: 30%; /* Chaque membre occupe 30% de la largeur disponible */
+    overflow: hidden;
+}
     
+.membre-item img {
+   width: 80%; /* L'image occupe toute la largeur du membre */
+    height: auto;
+    display: block;
+}
     
+.texte {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; /* Le texte est invisible par défaut */
+    transition: opacity 0.5s ease;
+    padding: 20px;
+}
 
-
+.membre-item:hover .texte {
+    opacity: 1; /* Le texte apparaît au survol de l'image */
+}
+    
+.texte p {
+     margin: 0;
+     word-wrap: break-word;
+     max-height: 100%; /* Assure que le texte ne dépasse pas */
+     overflow-y:hidden; /* Si le texte dépasse, défilement */
+ }
+.membre h2{
+    padding-bottom: 10%;
+}
 .membre img {
     width: auto;
     height: auto;
@@ -401,7 +425,7 @@ text-align: center;
     padding-bottom: 10%;
 }
 #carte article p{
-    padding-bottom: 25%;
+    padding-bottom: 20%;
 }
 #carte figure{
     height: 100% ;
@@ -409,19 +433,13 @@ text-align: center;
 #carte figure img{
     height: 100%;
 }
-
-h2{
-    font-family: "Aguafina Script";
-    font-size: 6rem;
-
+.button{
+    display: flex;
+    justify-content: center;
 }
-p{
-    font-family: "Open Sans";
-    font-size: 1.3rem;
-}
-
 .btn {
     display: inline-block;
+    justify-content: center;
     padding: 10px 20px;
     background-color: #ffffff; 
     color: black; 
@@ -506,7 +524,7 @@ p{
     padding-bottom: 10%;
 }
 .vin article p{
-    padding-bottom: 25%;
+    padding-bottom: 10%;
 }
 .certif{
     display: flex;
