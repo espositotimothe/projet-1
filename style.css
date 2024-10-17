@@ -319,7 +319,7 @@ p{
         margin: 0;
         word-wrap: break-word;
         max-height: 100%; /* Assure que le texte ne dépasse pas */
-        overflow-y:hidden; /* Si le texte dépasse, défilement */
+        overflow-y: hidden; /* Si le texte dépasse, défilement */
     }
 .membre-item {
     position: relative;
