@@ -180,16 +180,10 @@ p{
 #ethique {
     display: flex;
     justify-content: space-between;
-    margin: 10%;
+    margin: 5%;
     height: 80vh;
 }
 
-
-.carousel img {
-    max-width: 100%;
-    height: auto;
-    margin-left: 10px;
-}
 
 #ethique article {
     width: 50%;
@@ -206,15 +200,13 @@ p{
     width: 100%;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    height: 100%;
-
+    height: 85vh;
 }
 
 .slides {
     display: flex;
     width: 100%;
-    animation: slide 7s infinite;
+    animation: slide 15s infinite;
 }
 
 .slide {
@@ -225,21 +217,21 @@ p{
 
 .slide img {
     width: 100%;
-    border-radius: 10px;
+   
 }
 @keyframes slide {
     0% { transform: translateX(0); }
-    33% { transform: translateX(0); }
-    38% { transform: translateX(-100%); }
-    71% { transform: translateX(-100%); }
-    76% { transform: translateX(-200%); }
-    100% { transform: translateX(-200%); }
+    33% { transform: translateX(-100%); }
+    38% { transform: translateX(-200%); }
+    71% { transform: translateX(-300%); }
+    76% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
 }
 
 #chef{
     display: flex;
     justify-content: space-between;
-    margin: 10%;
+    margin: 5%;
     height: 80vh;
 }
 #chef figure{
@@ -263,111 +255,71 @@ p{
     padding-bottom: 25%;
     }
 
- .equipe h2 {
+.equipe h2 {
     color: #000;
     font-family: "Aguafina Script";
     font-size: 6rem;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
     margin-top: auto;
- }
- .equipe.texte p {
-    text-align: center;
-    }
     
-.equipe {
-    display: flex;
-    justify-content: center; /* Espacement égal entre les membres */
-    gap: 20px; /* Espace entre chaque membre */
-   margin: 20px 0;
-    flex-direction: row;
-    align-items: center;
-    height: 80%;
 }
+.equipe.texte p {
+    text-align: center;
+}
+    
 .membre {
     display: flex;
-    justify-content: space-around; /* Espace entre les images */
-    gap: 20px; /* Espace entre chaque membre */
-     margin-top: 20px;
+    justify-content: space-between; 
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; 
+    gap: 20px; 
 }
-    
-    .membre-item {
-        position: relative;
-        width: 30%; /* Chaque membre occupe 30% de la largeur disponible */
-        overflow: hidden;
-    }
-    
-    .membre-item img {
-        width: 80%; /* L'image occupe toute la largeur du membre */
-        height: auto;
-        display: block;
-    }
-    
-    .texte {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 75%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-        color: white;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        opacity: 0; /* Le texte est invisible par défaut */
-        transition: opacity 0.5s ease;
-        padding: 20px;
-    }
-    
-    .membre-item:hover .texte {
-        opacity: 1; /* Le texte apparaît au survol de l'image */
-    }
-    
-    .texte p {
-        margin: 0;
-        word-wrap: break-word;
-        max-height: 100%; /* Assure que le texte ne dépasse pas */
-        overflow-y:hidden; /* Si le texte dépasse, défilement */
-    }
+
 .membre-item {
-    position: relative;
-    width: 30%; /* Chaque membre occupe 30% de la largeur disponible */
-    overflow: hidden;
+    position: relative; 
+    overflow: hidden; 
+    margin: 0 10px; 
+    text-align: center;
+    width: auto;
+    margin-bottom: 60px;
 }
-    
+
 .membre-item img {
-   width: 80%; /* L'image occupe toute la largeur du membre */
-    height: auto;
     display: block;
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 8px; 
 }
-    
+
 .texte {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 75%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0; /* Le texte est invisible par défaut */
-    transition: opacity 0.5s ease;
+    bottom: 0; 
+    background-color: #e5c07bb7; 
+    color: #000000;
     padding: 20px;
+    text-align: center;
+    transform: translateY(100%); 
+    transition: transform 0.3s ease-in-out; 
+    opacity: 0; 
+    font-weight: bold;
 }
 
 .membre-item:hover .texte {
-    opacity: 1; /* Le texte apparaît au survol de l'image */
+    transform: translateY(0); 
+    opacity: 1; 
+    background-size: 120%;
 }
-    
+
+
 .texte p {
-     margin: 0;
-     word-wrap: break-word;
-     max-height: 100%; /* Assure que le texte ne dépasse pas */
-     overflow-y:hidden; /* Si le texte dépasse, défilement */
- }
+        margin: 0;
+        word-wrap: break-word;
+        max-height: 100%; 
+        overflow-y: hidden; 
+}
+
 .membre h2{
     padding-bottom: 10%;
 }
@@ -375,32 +327,6 @@ p{
     width: auto;
     height: auto;
     transition: opacity 0.5s ease; /* Transition pour l'opacité */
-}
-
-.membre .texte {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: auto;
-    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0; /* Par défaut, le texte est invisible */
-    transition: opacity 0.5s ease; /* Transition pour l'apparition du texte */
-    padding: 20px;
-    font-size: 10%;
-}
-
-.membre:hover img {
-    opacity: 0.5; /* Réduit la visibilité de l'image lorsqu'on passe la souris */
-}
-
-.membre:hover .texte {
-    opacity: 1; /* Le texte devient visible lors du survol */
 }
 
 .m {
