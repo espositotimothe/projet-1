@@ -6,181 +6,211 @@
     --text: black;
 }
 
-
-header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
+#header{
+    height: 60vh;
+    width: auto;
 }
-
-
-header>nav.scrolled {
-    background-color: #E5C07B;
+#header nav{
+    justify-content: center;
 }
-
-header nav ul {
-    display: flex;
-    padding-left: 2%;
-    border: none;
-    gap: 35px;
-    align-items: center;
+#header nav ul{
+    gap: 2%;
+    padding: 0;
+    width: 70%;
+    justify-content: center;
 }
-
-header nav li a {
-    text-decoration: none;
-    color: var(--text);
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
-    font-size: 50px;
-}
-
-li a:hover {
-    border-bottom: 1px solid #000;
-}
-
-li a:active {
-    transform: scale(0.95);
-}
-
-button {
-    background-color: black;
-    text-decoration: none;
-    color: var(--gold);
-    border: 2px solid var(--gold);
-    padding: 15px 30px;
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
+#navbar{
     position: relative;
-    overflow: hidden;
-    transition: color 0.3s, background-color 0.3s, transform 0.4s;
-    padding: 20px 30px 15px 30px;
-    margin: 20px 10px;
 }
-
-button a {
-    text-decoration: none;
-    color: var(--gold);
+#navbar li a{
+    font-size: 1.7rem;
+    text-align: center;
 }
-
-button::before {
-    content: 'Bientôt Disponible';
-    position: absolute;
-    top: 0;
-    left: 0;
+#header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 50%;
+}
+#header .logo img{
     width: 100%;
-    height: 100%;
+}
+
+#reservationButton{
+    display: none;
+}
+
+
+
+#ethique{
+    flex-direction: column;
+    display: block;
+    height: auto;
+}
+#ethique article{
+    flex-direction: column;
     display: flex;
     justify-content: center;
+    width: 90%;
+    height: 80vh;
+    padding-bottom: 10%;
+}
+#ethique article p{
+    text-align: center;
+}
+#ethique figure{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.m{
+    width: 100%;
+}
+.m img{
+    width: 90%;
+}
+#chef{
+    flex-direction: column;
     align-items: center;
-    color: black;
-    background-color: var(--gold);
-    transform: translateY(100%);
-    transition: transform 0.4s;
-}
-
-button:hover {
-    color: black;
-    background-color: var(--gold);
-}
-
-button:hover::before {
-    transform: translateY(0);
-}
-
-button:hover {
-    transform: scale(1.05);
-}
-
-button:active {
-    transform: scale(0.95);
-}
-
-.logo {
-    width: 600px;
     height: auto;
-    padding: 5px;
-    background-color: transparent;
+}
+#chef article{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 80vh;
+}
+#chef article p{
+    text-align: center;
+}
+#chef figure{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 20%;
+}
+#chef figure img{
+    padding: 0;
+}
+#equipe{
+    flex-direction: column;
+}
+.membre{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.membre .membre-item{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+}
+
+#carte{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+#carte article{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 80vh;
+    padding-bottom: 10%;
+}
+#carte article p{
+    text-align: center;
+}
+#carte figure{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+.button{
+    padding-bottom: 15%;
+}
+
+.carroussel-plat{
+    flex-direction: column;
     display: block;
-    margin: 0 auto;
-    padding-top: 80px;
+    height: auto;
+}
+.carroussel-plat article{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 80vh;
+    padding-bottom: 10%;
+}
+.carroussel-plat article h4{
+    text-align: center;
+}
+.carroussel-plat figure{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+.vin{
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    margin: 0;
+}
+.vin article{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 80vh;
+    padding-bottom: 10%;
+}
+.vin article p{
+    text-align: center;
+}
+.vin figure{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding-bottom: 40%;
+}
+.vin .button{
+    padding-bottom: 15%;
+}
+.certif{
+    padding: 20% 0;
 }
 
-@media (max-width: 768px) {
-    
-    .hamburger {
-        display: block;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        font-size: 30px;
-        cursor: pointer;
-        padding: 10px;
-        color: var(--text);
-        z-index: 1001;
-    }
-
-    
-    header nav ul {
-        display: none; 
-        flex-direction: column;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        background-color: var(--navfooterbg);
-        width: 200px; 
-        text-align: left;
-        padding: 20px;
-        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
-        z-index: 1000;
-    }
-
-    
-    header nav ul li {
-        margin: 20px 0;
-    }
-
-    
-    #reservationButton {
-        display: block;
-        position: absolute;
-        right: 5px;
-        background-color: black;
-        color: gold;
-        border: 2px solid #F1C40F;
-        padding: 5px 10px;
-        font-size: 16px;
-        z-index: 1001;
-        margin: 20px 0;
-        text-align: center;
-    }
-
-    #reservationButton a {
-        width: 60%;
-        display: block;
-        padding: 10px;
-    }
-
-    .logo {
-        width: 300px;
-        padding-top: 30px;
-    }
-
-    
-    header {
-        height: 100vh;
-    }
+footer .container{
+    flex-wrap: wrap;
+    justify-content: left;
 }
-
-@media (min-width: 769px) {
-    .hamburger {
-        display: none;
-    }
+.container .logos{
+    width: 100%;
+}
+.liens{
+    width: 40%;
+}
+footer .liens li{
+    text-align: left;
+}
+.contact{
+    width: 60%;
+    padding-left: 14%;
+}
+footer .liens{
+    display: none;
+}
+footer .contact{
+    display: none;
 }
